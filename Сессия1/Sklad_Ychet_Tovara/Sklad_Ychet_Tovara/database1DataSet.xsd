@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="database1DataSet" targetNamespace="http://tempuri.org/database1DataSet.xsd" xmlns:mstns="http://tempuri.org/database1DataSet.xsd" xmlns="http://tempuri.org/database1DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="database1ConnectionString (Settings)" PropertyReference="ApplicationSettings.Sklad_Ychet_Tovara.Properties.Settings.GlobalReference.Default.database1ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="opisanieTableAdapter" GeneratorDataComponentClassName="opisanieTableAdapter" Name="opisanie" UserDataComponentName="opisanieTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `opisanie`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_id_otdela" DataSetColumn="_id_otdela" />
+              <Mapping SourceColumn="otdel" DataSetColumn="otdel" />
+              <Mapping SourceColumn="info_otdela" DataSetColumn="info_otdela" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="postavshchikTableAdapter" GeneratorDataComponentClassName="postavshchikTableAdapter" Name="postavshchik" UserDataComponentName="postavshchikTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `postavshchik`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_id_post" DataSetColumn="_id_post" />
+              <Mapping SourceColumn="name_post" DataSetColumn="name_post" />
+              <Mapping SourceColumn="adres" DataSetColumn="adres" />
+              <Mapping SourceColumn="telefon" DataSetColumn="telefon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tovarTableAdapter" GeneratorDataComponentClassName="tovarTableAdapter" Name="tovar" UserDataComponentName="tovarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `tovar`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_id_tovara" DataSetColumn="_id_tovara" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="_id_otdela" DataSetColumn="_id_otdela" />
+              <Mapping SourceColumn="kol_tovara" DataSetColumn="kol_tovara" />
+              <Mapping SourceColumn="edinica_izmereniay" DataSetColumn="edinica_izmereniay" />
+              <Mapping SourceColumn="cena_na_prod" DataSetColumn="cena_na_prod" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="postavkiTableAdapter" GeneratorDataComponentClassName="postavkiTableAdapter" Name="postavki" UserDataComponentName="postavkiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `postavki`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_id_zakaza" DataSetColumn="_id_zakaza" />
+              <Mapping SourceColumn="_id_postav" DataSetColumn="_id_postav" />
+              <Mapping SourceColumn="_id_tovara" DataSetColumn="_id_tovara" />
+              <Mapping SourceColumn="kol_tovara" DataSetColumn="kol_tovara" />
+              <Mapping SourceColumn="data" DataSetColumn="data" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prodazhaTableAdapter" GeneratorDataComponentClassName="prodazhaTableAdapter" Name="prodazha" UserDataComponentName="prodazhaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `prodazha`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_id_prod" DataSetColumn="_id_prod" />
+              <Mapping SourceColumn="_id_tovara" DataSetColumn="_id_tovara" />
+              <Mapping SourceColumn="kol_prod" DataSetColumn="kol_prod" />
+              <Mapping SourceColumn="data" DataSetColumn="data" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="database1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="database1DataSet" msprop:Generator_UserDSName="database1DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="opisanie" msprop:Generator_TableClassName="opisanieDataTable" msprop:Generator_TableVarName="tableopisanie" msprop:Generator_TablePropName="opisanie" msprop:Generator_RowDeletingName="opisanieRowDeleting" msprop:Generator_RowChangingName="opisanieRowChanging" msprop:Generator_RowEvHandlerName="opisanieRowChangeEventHandler" msprop:Generator_RowDeletedName="opisanieRowDeleted" msprop:Generator_UserTableName="opisanie" msprop:Generator_RowChangedName="opisanieRowChanged" msprop:Generator_RowEvArgName="opisanieRowChangeEvent" msprop:Generator_RowClassName="opisanieRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_id_otdela" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="column_id_otdela" msprop:Generator_ColumnPropNameInRow="_id_otdela" msprop:Generator_ColumnPropNameInTable="_id_otdelaColumn" msprop:Generator_UserColumnName="_id_otdela" type="xs:int" minOccurs="0" />
+              <xs:element name="otdel" msprop:Generator_ColumnVarNameInTable="columnotdel" msprop:Generator_ColumnPropNameInRow="otdel" msprop:Generator_ColumnPropNameInTable="otdelColumn" msprop:Generator_UserColumnName="otdel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="info_otdela" msprop:Generator_ColumnVarNameInTable="columninfo_otdela" msprop:Generator_ColumnPropNameInRow="info_otdela" msprop:Generator_ColumnPropNameInTable="info_otdelaColumn" msprop:Generator_UserColumnName="info_otdela" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="postavshchik" msprop:Generator_TableClassName="postavshchikDataTable" msprop:Generator_TableVarName="tablepostavshchik" msprop:Generator_TablePropName="postavshchik" msprop:Generator_RowDeletingName="postavshchikRowDeleting" msprop:Generator_RowChangingName="postavshchikRowChanging" msprop:Generator_RowEvHandlerName="postavshchikRowChangeEventHandler" msprop:Generator_RowDeletedName="postavshchikRowDeleted" msprop:Generator_UserTableName="postavshchik" msprop:Generator_RowChangedName="postavshchikRowChanged" msprop:Generator_RowEvArgName="postavshchikRowChangeEvent" msprop:Generator_RowClassName="postavshchikRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_id_post" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="column_id_post" msprop:Generator_ColumnPropNameInRow="_id_post" msprop:Generator_ColumnPropNameInTable="_id_postColumn" msprop:Generator_UserColumnName="_id_post" type="xs:int" minOccurs="0" />
+              <xs:element name="name_post" msprop:Generator_ColumnVarNameInTable="columnname_post" msprop:Generator_ColumnPropNameInRow="name_post" msprop:Generator_ColumnPropNameInTable="name_postColumn" msprop:Generator_UserColumnName="name_post">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adres" msprop:Generator_ColumnVarNameInTable="columnadres" msprop:Generator_ColumnPropNameInRow="adres" msprop:Generator_ColumnPropNameInTable="adresColumn" msprop:Generator_UserColumnName="adres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefon" msprop:Generator_ColumnVarNameInTable="columntelefon" msprop:Generator_ColumnPropNameInRow="telefon" msprop:Generator_ColumnPropNameInTable="telefonColumn" msprop:Generator_UserColumnName="telefon" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tovar" msprop:Generator_TableClassName="tovarDataTable" msprop:Generator_TableVarName="tabletovar" msprop:Generator_RowChangedName="tovarRowChanged" msprop:Generator_TablePropName="tovar" msprop:Generator_RowDeletingName="tovarRowDeleting" msprop:Generator_RowChangingName="tovarRowChanging" msprop:Generator_RowEvHandlerName="tovarRowChangeEventHandler" msprop:Generator_RowDeletedName="tovarRowDeleted" msprop:Generator_RowClassName="tovarRow" msprop:Generator_UserTableName="tovar" msprop:Generator_RowEvArgName="tovarRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_id_tovara" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="column_id_tovara" msprop:Generator_ColumnPropNameInRow="_id_tovara" msprop:Generator_ColumnPropNameInTable="_id_tovaraColumn" msprop:Generator_UserColumnName="_id_tovara" type="xs:int" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_id_otdela" msprop:Generator_ColumnVarNameInTable="column_id_otdela" msprop:Generator_ColumnPropNameInRow="_id_otdela" msprop:Generator_ColumnPropNameInTable="_id_otdelaColumn" msprop:Generator_UserColumnName="_id_otdela" type="xs:int" />
+              <xs:element name="kol_tovara" msprop:Generator_ColumnVarNameInTable="columnkol_tovara" msprop:Generator_ColumnPropNameInRow="kol_tovara" msprop:Generator_ColumnPropNameInTable="kol_tovaraColumn" msprop:Generator_UserColumnName="kol_tovara" type="xs:int" />
+              <xs:element name="edinica_izmereniay" msprop:Generator_ColumnVarNameInTable="columnedinica_izmereniay" msprop:Generator_ColumnPropNameInRow="edinica_izmereniay" msprop:Generator_ColumnPropNameInTable="edinica_izmereniayColumn" msprop:Generator_UserColumnName="edinica_izmereniay">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cena_na_prod" msprop:Generator_ColumnVarNameInTable="columncena_na_prod" msprop:Generator_ColumnPropNameInRow="cena_na_prod" msprop:Generator_ColumnPropNameInTable="cena_na_prodColumn" msprop:Generator_UserColumnName="cena_na_prod">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="382" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="postavki" msprop:Generator_TableClassName="postavkiDataTable" msprop:Generator_TableVarName="tablepostavki" msprop:Generator_RowChangedName="postavkiRowChanged" msprop:Generator_TablePropName="postavki" msprop:Generator_RowDeletingName="postavkiRowDeleting" msprop:Generator_RowChangingName="postavkiRowChanging" msprop:Generator_RowEvHandlerName="postavkiRowChangeEventHandler" msprop:Generator_RowDeletedName="postavkiRowDeleted" msprop:Generator_RowClassName="postavkiRow" msprop:Generator_UserTableName="postavki" msprop:Generator_RowEvArgName="postavkiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_id_zakaza" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="column_id_zakaza" msprop:Generator_ColumnPropNameInRow="_id_zakaza" msprop:Generator_ColumnPropNameInTable="_id_zakazaColumn" msprop:Generator_UserColumnName="_id_zakaza" type="xs:int" minOccurs="0" />
+              <xs:element name="_id_postav" msprop:Generator_ColumnVarNameInTable="column_id_postav" msprop:Generator_ColumnPropNameInRow="_id_postav" msprop:Generator_ColumnPropNameInTable="_id_postavColumn" msprop:Generator_UserColumnName="_id_postav" type="xs:int" />
+              <xs:element name="_id_tovara" msprop:Generator_ColumnVarNameInTable="column_id_tovara" msprop:Generator_ColumnPropNameInRow="_id_tovara" msprop:Generator_ColumnPropNameInTable="_id_tovaraColumn" msprop:Generator_UserColumnName="_id_tovara" type="xs:int" />
+              <xs:element name="kol_tovara" msprop:Generator_ColumnVarNameInTable="columnkol_tovara" msprop:Generator_ColumnPropNameInRow="kol_tovara" msprop:Generator_ColumnPropNameInTable="kol_tovaraColumn" msprop:Generator_UserColumnName="kol_tovara" type="xs:int" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="prodazha" msprop:Generator_TableClassName="prodazhaDataTable" msprop:Generator_TableVarName="tableprodazha" msprop:Generator_TablePropName="prodazha" msprop:Generator_RowDeletingName="prodazhaRowDeleting" msprop:Generator_RowChangingName="prodazhaRowChanging" msprop:Generator_RowEvHandlerName="prodazhaRowChangeEventHandler" msprop:Generator_RowDeletedName="prodazhaRowDeleted" msprop:Generator_UserTableName="prodazha" msprop:Generator_RowChangedName="prodazhaRowChanged" msprop:Generator_RowEvArgName="prodazhaRowChangeEvent" msprop:Generator_RowClassName="prodazhaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_id_prod" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="column_id_prod" msprop:Generator_ColumnPropNameInRow="_id_prod" msprop:Generator_ColumnPropNameInTable="_id_prodColumn" msprop:Generator_UserColumnName="_id_prod" type="xs:int" minOccurs="0" />
+              <xs:element name="_id_tovara" msprop:Generator_ColumnVarNameInTable="column_id_tovara" msprop:Generator_ColumnPropNameInRow="_id_tovara" msprop:Generator_ColumnPropNameInTable="_id_tovaraColumn" msprop:Generator_UserColumnName="_id_tovara" type="xs:int" />
+              <xs:element name="kol_prod" msprop:Generator_ColumnVarNameInTable="columnkol_prod" msprop:Generator_ColumnPropNameInRow="kol_prod" msprop:Generator_ColumnPropNameInTable="kol_prodColumn" msprop:Generator_UserColumnName="kol_prod" type="xs:int" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:opisanie" />
+      <xs:field xpath="mstns:_id_otdela" />
+    </xs:unique>
+    <xs:unique name="postavshchik_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:postavshchik" />
+      <xs:field xpath="mstns:_id_post" />
+    </xs:unique>
+    <xs:unique name="tovar_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:tovar" />
+      <xs:field xpath="mstns:_id_tovara" />
+    </xs:unique>
+    <xs:unique name="postavki_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:postavki" />
+      <xs:field xpath="mstns:_id_zakaza" />
+    </xs:unique>
+    <xs:unique name="prodazha_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:prodazha" />
+      <xs:field xpath="mstns:_id_prod" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
